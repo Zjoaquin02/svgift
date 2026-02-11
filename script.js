@@ -57,7 +57,7 @@ function yesAnswer() {
         <div class="content final">
             <div style="font-size:40px">💖</div>
             <h2>Sabía que dirías que sí 😍</h2>
-            <p>Eres la mejor decisión de mi vida.</p>
+            <p>Eres el amor de mi vida.</p>
         </div>
     `;
 
