@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f8c8dc, #f3b6cc);
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    width: 340px;
+    height: 520px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+
+.rope-container {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.rope {
+    width: 4px;
+    height: 120px;
+    background: #ff3f6c;
+    position: relative;
+    cursor: grab;
+    transition: transform .2s;
+}
+
+.tag {
+    width: 30px;
+    height: 40px;
+    background: #ff3f6c;
+    position: absolute;
+    bottom: -40px;
+    left: -13px;
+    border-radius: 6px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.heart {
+    font-size: 50px;
+    opacity: .6;
+}
+
+.question {
+    font-size: 22px;
+    margin-bottom: 25px;
+    animation: fadeIn .6s ease forwards;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+    position: relative;
+}
+
+.yes {
+    background: #ff789a;
+    color: white;
+}
+
+.no {
+    background: #ddd;
+}
+
+.final {
+    animation: scaleUp .6s ease forwards;
+}
+
+.instruction {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
