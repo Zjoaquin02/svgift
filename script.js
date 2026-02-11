@@ -24,7 +24,7 @@ rope.addEventListener("click", () => {
 function showQuestion() {
 
     content.innerHTML = `
-        <div class="question">¿Quieres ser mi San Valentín? ❤️</div>
+        <div class="question">¿Queres ser mi San Valentín? ❤️</div>
         <div class="buttons">
             <button class="yes">Sí</button>
             <button class="no">No</button>
